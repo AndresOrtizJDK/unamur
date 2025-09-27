@@ -64,7 +64,7 @@ body {
 }
 
 .nav-bar {
-    width: 82vw;
+    width: 90vw;
     height: 65px;
     background-color: white;
     margin-top: 52px; 
@@ -162,7 +162,6 @@ ul {
 
 
 .video-section{
-    height: 562px;
     width: 100vw;
 }
 
@@ -181,7 +180,7 @@ ul {
 .video-loop video{
     filter: brightness(50%); 
     object-fit: cover;
-    height: 562px;
+    height: 600px;
     width: 100%;
 }
 .video-loop .welcome h1{
