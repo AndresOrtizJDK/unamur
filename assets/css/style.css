@@ -6,12 +6,14 @@ body {
     padding: 0;
     margin: 0;
     font-family: "Nunito Sans", sans-serif;
-    overflow-x: hidden; /* Agregado: ocultar scroll horizontal */
+    overflow-x: hidden;
+    /* Agregado: ocultar scroll horizontal */
 }
 
 .top-header {
     position: fixed;
-    width: 100%; /* Cambiado de 100vw a 100% */
+    width: 100%;
+    /* Cambiado de 100vw a 100% */
     height: 36px;
     background-color: #41454f;
     display: flex;
@@ -48,7 +50,8 @@ body {
     cursor: pointer;
 }
 
-.top-header .elements ul li:hover, .lenguaje:hover {
+.top-header .elements ul li:hover,
+.lenguaje:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -66,17 +69,18 @@ body {
 }
 
 .nav-bar {
-    width: 82%; /* Cambiado de 82vw a 82% */
+    width: 82%;
+    /* Cambiado de 82vw a 82% */
     height: 65px;
     background-color: white;
-    margin-top: 52px; 
+    margin-top: 52px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     box-shadow: 0px 4px 6px -1px rgb(0 0 0 / 0.08), 0px 2px 4px -2px rgb(0 0 0 / 0.08);
     position: fixed;
     z-index: 10;
-    border-radius: 0 50px 50px 0; 
+    border-radius: 0 50px 50px 0;
     overflow: hidden;
 }
 
@@ -87,7 +91,7 @@ body {
     width: 100%;
     padding-right: 10px;
     box-sizing: border-box;
-    gap: 33px; 
+    gap: 33px;
 }
 
 .nav-logo img {
@@ -138,8 +142,8 @@ body {
     font-weight: 600;
     border: none;
     height: 50px;
-    padding: 0 20px; 
-    border-radius: 32px; 
+    padding: 0 20px;
+    border-radius: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,30 +167,35 @@ ul {
 
 
 
-.video-section{
-    width: 100%; /* Cambiado de 100vw a 100% */
-    overflow: hidden; /* Agregado: prevenir desbordamiento */
+.video-section {
+    width: 100%;
+    /* Cambiado de 100vw a 100% */
+    overflow: hidden;
+    /* Agregado: prevenir desbordamiento */
 }
 
-.video-loop{
+.video-loop {
     position: relative;
     height: auto;
     width: auto;
 }
-.video-loop .welcome{
+
+.video-loop .welcome {
     position: absolute;
     top: 35%;
     display: flex;
     justify-content: center;
     width: 75%;
 }
-.video-loop video{
-    filter: brightness(50%); 
+
+.video-loop video {
+    filter: brightness(50%);
     object-fit: cover;
     height: 600px;
     width: 100%;
 }
-.video-loop .welcome h1{
+
+.video-loop .welcome h1 {
     font-family: "Rubik", sans-serif;
     color: white;
     font-size: 72px;
@@ -195,10 +204,14 @@ ul {
 
 .description-section {
     width: 100%;
-    max-width: 800px; /* Opcional: limitar el ancho máximo */
-    margin: 60px auto 120px auto;/* Opcional: centrar la sección y agregar margen superior e inferior */
-    padding: 0 20px; /* Opcional: agregar padding lateral */
-    text-align: start; /* Centrar el texto */
+    max-width: 800px;
+    /* Opcional: limitar el ancho máximo */
+    margin: 60px auto 120px auto;
+    /* Opcional: centrar la sección y agregar margen superior e inferior */
+    padding: 0 20px;
+    /* Opcional: agregar padding lateral */
+    text-align: start;
+    /* Centrar el texto */
 }
 
 .description {
@@ -219,11 +232,12 @@ ul {
     margin-bottom: 20px;
 }
 
-.youare-section{
+.youare-section {
     width: 80vw;
     max-width: 100vw;
     margin-left: 50%;
-    transform: translateX(-50%);/* más respiración */
+    transform: translateX(-50%);
+    /* más respiración */
     margin-top: 60px;
 }
 
@@ -234,41 +248,62 @@ ul {
 }
 
 .youare-item {
-    flex: 0 0 calc((100% - 105px) / 4); /* 4 elementos por fila: (3 gaps * 35px) = 105px */
+    flex: 0 0 calc((100% - 105px) / 4);
+    /* 4 elementos por fila: (3 gaps * 35px) = 105px */
     max-width: calc((100% - 105px) / 4);
     background-color: #f4f6f8;
     border-radius: 4px;
-    padding: 30px 30px 5px 30px; /* Aumentado de 20px a 30px */
-    display: flex; /* Cambiar a flex para mejor control del contenido */
-    flex-direction: column; /* Contenido en columna */
-    align-items: flex-start; /* Alinear al inicio */
-    gap: 15px; /* Aumentado de 10px a 15px */
+    padding: 30px 30px 5px 30px;
+    /* Aumentado de 20px a 30px */
+    display: flex;
+    /* Cambiar a flex para mejor control del contenido */
+    flex-direction: column;
+    /* Contenido en columna */
+    align-items: flex-start;
+    /* Alinear al inicio */
+    gap: 15px;
+    /* Aumentado de 10px a 15px */
     box-sizing: border-box;
     cursor: pointer;
     transition: background-color 0.4s ease, box-shadow 0.4s ease;
-    word-wrap: break-word; /* Romper palabras largas */
-    overflow-wrap: break-word; /* Compatibilidad adicional */
-    min-height: 150px; /* Altura mínima para hacer el contenedor más grande */
+    word-wrap: break-word;
+    /* Romper palabras largas */
+    overflow-wrap: break-word;
+    /* Compatibilidad adicional */
+    min-height: 150px;
+    /* Altura mínima para hacer el contenedor más grande */
 }
 
 .youare-item p {
     color: #334155;
-    margin-top: 10px; /* Quitar margen por defecto */
-    padding: 0; /* Quitar padding por defecto */
-    font-size: 18px; /* Aumentado de 14px a 16px */
+    margin-top: 10px;
+    /* Quitar margen por defecto */
+    padding: 0;
+    /* Quitar padding por defecto */
+    font-size: 18px;
+    /* Aumentado de 14px a 16px */
     font-family: rubik;
-    line-height:24px; /* Aumentado de 1.4 a 1.5 */
-    word-wrap: break-word; /* Romper palabras largas */
-    overflow-wrap: break-word; /* Compatibilidad adicional */
-    hyphens: auto; /* Guiones automáticos */
-    width: 100%; /* Asegurar que ocupe todo el ancho disponible */
-    font-weight: 400; /* Añadido peso de fuente */
+    line-height: 24px;
+    /* Aumentado de 1.4 a 1.5 */
+    word-wrap: break-word;
+    /* Romper palabras largas */
+    overflow-wrap: break-word;
+    /* Compatibilidad adicional */
+    hyphens: auto;
+    /* Guiones automáticos */
+    width: 100%;
+    /* Asegurar que ocupe todo el ancho disponible */
+    font-weight: 400;
+    /* Añadido peso de fuente */
 }
 
 .youare-item svg {
-    flex-shrink: 0; /* Evitar que el SVG se encoja */
-    width: 55px; /* Aumentado de 40px a 55px */
-    height: 55px; /* Aumentado de 40px a 55px */
+    flex-shrink: 0;
+    /* Evitar que el SVG se encoja */
+    width: 55px;
+    /* Aumentado de 40px a 55px */
+    height: 55px;
+    /* Aumentado de 40px a 55px */
 }
 
 /* Forzar color verde unificado en todos los íconos SVG de la sección "Vous êtes" */
@@ -279,22 +314,27 @@ ul {
 
 .youare-item h3 {
     margin: 0;
-    font-size: 18px; /* Tamaño para títulos si los tienes */
+    font-size: 18px;
+    /* Tamaño para títulos si los tienes */
     font-weight: 600;
     color: #334155;
 }
 
 .youare-item:hover {
-    box-shadow: 
-        rgba(212, 213, 214, 0.3) -5px 10px 15px -3px, /* Izquierda y abajo */
-        rgba(213, 214, 216, 0.2) 5px 10px 15px -3px,  /* Derecha y abajo */
-        rgba(212, 213, 214, 0.15) 0px 8px 12px -2px;  /* Solo abajo (centrado) */
+    box-shadow:
+        rgba(212, 213, 214, 0.3) -5px 10px 15px -3px,
+        /* Izquierda y abajo */
+        rgba(213, 214, 216, 0.2) 5px 10px 15px -3px,
+        /* Derecha y abajo */
+        rgba(212, 213, 214, 0.15) 0px 8px 12px -2px;
+    /* Solo abajo (centrado) */
 }
 
 /* Responsive: 2 por fila en pantallas medianas */
 @media (max-width: 768px) {
     .youare-item {
-        flex: 0 0 calc(50% - 17.5px); /* 2 por fila */
+        flex: 0 0 calc(50% - 17.5px);
+        /* 2 por fila */
         max-width: calc(50% - 17.5px);
     }
 }
@@ -312,36 +352,43 @@ ul {
     /* height fijo eliminado para que sea relativo al contenido */
     margin: 120px auto;
     color: #334155;
-    border: #b1caed solid 1px;
+    border: #dae2ec solid 1px;
     border-radius: 4px;
     /* top | right | bottom | left */
-    padding: 48px 32px 56px 32px; /* bottom explícito */
+    padding: 48px 32px 56px 32px;
+    /* bottom explícito */
     box-sizing: border-box;
     transform: translateX(-50%);
     margin-left: 50%;
 }
 
-.image-container { /* corrección de typo y estilos base */
+.image-container {
+    /* corrección de typo y estilos base */
     width: 100%;
-    aspect-ratio: 4 / 3; /* Mantiene proporción consistente */
+    aspect-ratio: 4 / 3;
+    /* Mantiene proporción consistente */
     overflow: hidden;
     border-radius: 6px;
     position: relative;
-    background: #e2e8f0; /* color de fondo de reserva */
+    background: #e2e8f0;
+    /* color de fondo de reserva */
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Recorta y llena el contenedor */
+    object-fit: cover;
+    /* Recorta y llena el contenedor */
     display: block;
 }
 
 .studying-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    row-gap: 32px; /* mantiene separación vertical */
-    column-gap: 0;  /* sin separación horizontal: el espacio lo gestiona el padding interno */
+    row-gap: 32px;
+    /* mantiene separación vertical */
+    column-gap: 0;
+    /* sin separación horizontal: el espacio lo gestiona el padding interno */
     margin-top: 32px;
     padding: 0;
     list-style: none;
@@ -354,8 +401,9 @@ ul {
     position: relative;
     box-sizing: border-box;
     cursor: pointer;
-    padding: 0 24px; /* padding horizontal simétrico: crea espacio uniforme a ambos lados del borde */
-    border-right: 1px solid #b1caed;
+    padding: 0 24px;
+    /* padding horizontal simétrico: crea espacio uniforme a ambos lados del borde */
+    border-right: 1px solid #dae2ec;
 }
 
 .studying-item:hover h2 {
@@ -372,29 +420,35 @@ ul {
     content: "";
     position: absolute;
     top: 50%;
-    right: 0; /* dentro del padding */
+    right: 0;
+    /* dentro del padding */
     transform: translateY(-50%);
     width: 0;
     height: 0;
 }
 
 /* Último item sin flecha */
-.studying-item:last-child::after { content: none; }
+.studying-item:last-child::after {
+    content: none;
+}
 
 /* El último item no necesita borde derecho */
-.studying-item:last-child { border-right: none; padding-right: 0; }
+.studying-item:last-child {
+    border-right: none;
+    padding-right: 0;
+}
 
 .studying-list .studying-item {
     display: flex;
     flex-direction: column;
     position: relative;
-    
+
 }
 
 .studying-item:last-child::after {
     content: "";
     display: block;
-    width: 32px; 
+    width: 32px;
 }
 
 /* El último ítem no necesita separación a la derecha */
@@ -402,19 +456,39 @@ ul {
 
 /* Responsive: degradar a 2 columnas en tablets y 1 en móviles */
 @media (max-width: 900px) {
-    .studying-list { grid-template-columns: repeat(2, 1fr); }
+    .studying-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     /* En 2 columnas quitamos el borde del segundo en cada fila */
-    .studying-item { padding: 0 20px; }
-    .studying-item:nth-child(2n) { border-right: none; padding-right: 0; }
+    .studying-item {
+        padding: 0 20px;
+    }
+
+    .studying-item:nth-child(2n) {
+        border-right: none;
+        padding-right: 0;
+    }
 }
+
 @media (max-width: 520px) {
-    .studying-list { grid-template-columns: 1fr; }
-    .studying-item { border-right: none; padding: 0; }
-    .studying-list .studying-item:not(:last-child)::after { display: none; }
+    .studying-list {
+        grid-template-columns: 1fr;
+    }
+
+    .studying-item {
+        border-right: none;
+        padding: 0;
+    }
+
+    .studying-list .studying-item:not(:last-child)::after {
+        display: none;
+    }
 }
 
 #last-image {
-    aspect-ratio: 15 / 10; /* Imagen final más ancha */
+    aspect-ratio: 15 / 10;
+    /* Imagen final más ancha */
 }
 
 /* Responsive refinado: en pantallas pequeñas garantizamos al menos 2 columnas si cabe */
@@ -423,19 +497,111 @@ ul {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: 20px;
     }
-    .image-container { aspect-ratio: 16 / 10; }
+
+    .image-container {
+        aspect-ratio: 16 / 10;
+    }
 }
 
 .arrow-icon {
-    width: 48px;      /* tamaño de la flecha */
+    width: 48px;
+    /* tamaño de la flecha */
     height: 48px;
-    margin-top: 12px; /* espacio respecto al párrafo */
+    margin-top: 12px;
+    /* espacio respecto al párrafo */
     display: block;
     color: #4eb848;
     object-fit: contain;
     filter: invert(46%) sepia(79%) saturate(464%) hue-rotate(76deg) brightness(92%) contrast(90%);
-    
+
 }
+
+.une-section {
+    width: 80vw;
+    border-radius: 4px;
+    padding: 0px 32px 56px 32px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+    display: flex;
+    margin-left: 50%;
+    align-items: flex-start;
+    /* mejor que "start" */
+    gap: 30px;
+    /* separación entre columnas */
+}
+
+.actualites {
+    flex: 0 0 70%;
+    /* ocupa el 60% fijo */
+
+}
+
+.column-events {
+    flex: 0 0 30%;
+}
+
+.actualites h2 {
+    position: relative;
+    padding-bottom: 12px;
+    /* espacio para el separador */
+    margin-bottom: 20px;
+    /* espacio antes del grid */
+}
+
+.column-events h2 {
+    position: relative;
+    padding-bottom: 12px;
+    /* espacio para el separador */
+    margin-bottom: 20px;
+    /* espacio antes del grid */
+}
+
+.actualites h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* largo del separador */
+    height: 2px;
+    /* grosor */
+    background-color: #cacaca;
+    /* color del borde */
+}
+
+.column-events h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* largo del separador */
+    height: 2px;
+    /* grosor */
+    background-color: #cacaca;
+    /* color del borde */
+}
+
+.grid-photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 32px;
+    width: 100%;
+    /* 👈 ocupa solo el ancho de .actualites */
+    box-sizing: border-box;
+}
+
+.grid-photos img {
+    width: 100%;
+    /* 👈 que cada imagen llene su celda */
+    height: auto;
+    display: block;
+    object-fit: cover;
+    /* 👈 recorta bien si quieres uniformidad */
+    border-radius: 4px;
+}
+
 
 
 
@@ -468,9 +634,11 @@ ul {
 }
 
 /* Ajuste visual para que el título no sume margen extra sobre el padding del contenedor */
-.studying > #title-studying {
-    margin: 0 0 28px 0; /* Elimina margen superior y controla separación inferior */
-    line-height: 1.15; /* Más compacto */
+.studying>#title-studying {
+    margin: 0 0 28px 0;
+    /* Elimina margen superior y controla separación inferior */
+    line-height: 1.15;
+    /* Más compacto */
 }
 
 h1 {
@@ -483,4 +651,5 @@ h2 {
     font-family: "Rubik", sans-serif;
     color: #334155;
     font-weight: 400;
+    font-size: 28px;
 }

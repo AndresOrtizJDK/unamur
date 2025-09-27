@@ -101,7 +101,7 @@
     box-sizing: border-box;
     font-weight: 500;
     width: 400px;
-    
+
 }
 
 .container-number {
@@ -111,7 +111,7 @@
     gap: 60px;
     width: auto;
     height: 300px;
-   
+
     box-sizing: border-box;
 }
 
@@ -128,4 +128,98 @@
     color: #334155;
     font-size: 24px;
     font-weight: 400;
+}
+
+
+.container-facultes {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.nav-facultes {
+    display: flex;
+    justify-content: flex-start;
+    width: 65%;
+    /* controla el ancho de la barra*/
+
+    border-bottom: 1px solid #dae2ec;
+}
+
+.nav-font {
+    font-family: "Rubik", sans-serif;
+    color: #334155;
+    width: 13%;
+    font-size: 44px;
+    font-weight: 500;
+    padding: 24px 32px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-facultes .nav-font:first-child {
+    border-bottom: 2px solid #48b868;
+}
+
+.nav-facultes .nav-font:last-child {
+    color: #9da4ad;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        color: #334155;
+    }
+}
+
+.info-facultes {
+    display: flex;
+    width: 65%;
+}
+
+.info-facultes p {
+    padding: 20px;
+    color: #485466;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Nunito Sans", sans-serif;
+    width: 500px;
+}
+
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+    width: 65%;
+}
+
+.cards{
+    padding: 20px 30px;
+    background-color: #f4f6f8;
+    border-radius: 4px;
+    align-content: center;
+}
+.cards-facultes h3{
+    margin: 0;
+}
+
+.cards-facultes{
+    padding-left: 10px;
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    border-left: 3px solid;
+}
+
+.h4-card{
+    font-size: 14px;
+    font-weight: 400;
+    color: #4a5769;
+}
+
+.span-card{
+    font-size: 18px;
+    font-weight: 400;
+    color: #334155;
 }
