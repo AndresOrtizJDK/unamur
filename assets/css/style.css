@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.top-header {
+    width: 100vw;
+    height: 36px;
+    background-color: #41454f;
+    display: flex;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.top-header span {
+    padding: 0 24px;
+}
+
+.top-header .elements {
+    display: flex;
+    align-items: center;
+
+}
+
+.top-header nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 75%;
+    margin: 0 74px;
+    padding: 0 32px;
+}
+
+.top-header .elements ul li {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 12px;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.lenguaje {
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.top-header nav .elements ul li:last-child {
+    padding: 8px 0 0 12px;
+}
+
+.top-header nav .elements ul li:nth-child(2) {
+    padding: 8px 12px 8px 0px;
+}
+
+
+.top-header .elements ul {
+    display: flex;
+    list-style: none;
+}
+
+
+.video-section{
+    height: 562px;
+    width: 100vw;
+}
+.video-loop{
+    position: relative;
+    height: auto;
+    width: auto;
+}
+.video-loop .welcome{
+    position: absolute;
+    top: 35%;
+    display: flex;
+    justify-content: center;
+    width: 75%;
+}
+.video-loop video{
+    filter: brightness(50%); 
+    object-fit: cover;
+    height: 562px;
+    width: 100%;
+}
+.video-loop .welcome h1{
+    font-family: "Rubik", sans-serif;
+    color: white;
+    font-size: 72px;
+    font-weight: 500;
+}
+
+
+
+
+/* colores principales de la pagina*/
+.color-green {
+    color: #4eb848;
+
+}
+
+.color-gray {
+    color: #334155;
+}
+
+/* colores auxiliares*/
+.bg-card {
+    background-color: #f4f6f8;
+}
