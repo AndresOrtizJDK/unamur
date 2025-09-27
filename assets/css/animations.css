@@ -3,7 +3,7 @@
 }
 
 #navbar.hide {
-  transition: transform 1s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: transform 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53);
   transform: translateY(-100vh);
 }
 

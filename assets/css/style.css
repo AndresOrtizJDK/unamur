@@ -6,11 +6,12 @@ body {
     padding: 0;
     margin: 0;
     font-family: "Nunito Sans", sans-serif;
+    overflow-x: hidden; /* Agregado: ocultar scroll horizontal */
 }
 
 .top-header {
     position: fixed;
-    width: 100vw;
+    width: 100%; /* Cambiado de 100vw a 100% */
     height: 36px;
     background-color: #41454f;
     display: flex;
@@ -28,6 +29,7 @@ body {
     margin: 0 120px;
     padding: 0 10px;
 }
+
 
 .top-header .elements {
     display: flex;
@@ -64,7 +66,7 @@ body {
 }
 
 .nav-bar {
-    width: 90vw;
+    width: 82%; /* Cambiado de 82vw a 82% */
     height: 65px;
     background-color: white;
     margin-top: 52px; 
@@ -162,7 +164,8 @@ ul {
 
 
 .video-section{
-    width: 100vw;
+    width: 100%; /* Cambiado de 100vw a 100% */
+    overflow: hidden; /* Agregado: prevenir desbordamiento */
 }
 
 .video-loop{
@@ -190,6 +193,249 @@ ul {
     font-weight: 500;
 }
 
+.description-section {
+    width: 100%;
+    max-width: 800px; /* Opcional: limitar el ancho máximo */
+    margin: 60px auto 120px auto;/* Opcional: centrar la sección y agregar margen superior e inferior */
+    padding: 0 20px; /* Opcional: agregar padding lateral */
+    text-align: start; /* Centrar el texto */
+}
+
+.description {
+    font-family: "Nunito Sans", sans-serif;
+    color: #334155;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.youare {
+    font-family: "Rubik", sans-serif;
+    color: #334155;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.youare-section{
+    width: 80vw;
+    max-width: 100vw;
+    margin-left: 50%;
+    transform: translateX(-50%);/* más respiración */
+    margin-top: 60px;
+}
+
+.youare-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.youare-item {
+    flex: 0 0 calc((100% - 105px) / 4); /* 4 elementos por fila: (3 gaps * 35px) = 105px */
+    max-width: calc((100% - 105px) / 4);
+    background-color: #f4f6f8;
+    border-radius: 4px;
+    padding: 30px 30px 5px 30px; /* Aumentado de 20px a 30px */
+    display: flex; /* Cambiar a flex para mejor control del contenido */
+    flex-direction: column; /* Contenido en columna */
+    align-items: flex-start; /* Alinear al inicio */
+    gap: 15px; /* Aumentado de 10px a 15px */
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    word-wrap: break-word; /* Romper palabras largas */
+    overflow-wrap: break-word; /* Compatibilidad adicional */
+    min-height: 150px; /* Altura mínima para hacer el contenedor más grande */
+}
+
+.youare-item p {
+    color: #334155;
+    margin-top: 10px; /* Quitar margen por defecto */
+    padding: 0; /* Quitar padding por defecto */
+    font-size: 18px; /* Aumentado de 14px a 16px */
+    font-family: rubik;
+    line-height:24px; /* Aumentado de 1.4 a 1.5 */
+    word-wrap: break-word; /* Romper palabras largas */
+    overflow-wrap: break-word; /* Compatibilidad adicional */
+    hyphens: auto; /* Guiones automáticos */
+    width: 100%; /* Asegurar que ocupe todo el ancho disponible */
+    font-weight: 400; /* Añadido peso de fuente */
+}
+
+.youare-item svg {
+    flex-shrink: 0; /* Evitar que el SVG se encoja */
+    width: 55px; /* Aumentado de 40px a 55px */
+    height: 55px; /* Aumentado de 40px a 55px */
+}
+
+/* Forzar color verde unificado en todos los íconos SVG de la sección "Vous êtes" */
+.youare-item svg path,
+.youare-item svg .cls-1 {
+    fill: #50b94a !important;
+}
+
+.youare-item h3 {
+    margin: 0;
+    font-size: 18px; /* Tamaño para títulos si los tienes */
+    font-weight: 600;
+    color: #334155;
+}
+
+.youare-item:hover {
+    box-shadow: 
+        rgba(212, 213, 214, 0.3) -5px 10px 15px -3px, /* Izquierda y abajo */
+        rgba(213, 214, 216, 0.2) 5px 10px 15px -3px,  /* Derecha y abajo */
+        rgba(212, 213, 214, 0.15) 0px 8px 12px -2px;  /* Solo abajo (centrado) */
+}
+
+/* Responsive: 2 por fila en pantallas medianas */
+@media (max-width: 768px) {
+    .youare-item {
+        flex: 0 0 calc(50% - 17.5px); /* 2 por fila */
+        max-width: calc(50% - 17.5px);
+    }
+}
+
+/* Responsive: 1 por fila en pantallas pequeñas */
+@media (max-width: 480px) {
+    .youare-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.studying {
+    width: 80vw;
+    /* height fijo eliminado para que sea relativo al contenido */
+    margin: 120px auto;
+    color: #334155;
+    border: #b1caed solid 1px;
+    border-radius: 4px;
+    /* top | right | bottom | left */
+    padding: 48px 32px 56px 32px; /* bottom explícito */
+    box-sizing: border-box;
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+
+.image-container { /* corrección de typo y estilos base */
+    width: 100%;
+    aspect-ratio: 4 / 3; /* Mantiene proporción consistente */
+    overflow: hidden;
+    border-radius: 6px;
+    position: relative;
+    background: #e2e8f0; /* color de fondo de reserva */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta y llena el contenedor */
+    display: block;
+}
+
+.studying-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 32px; /* mantiene separación vertical */
+    column-gap: 0;  /* sin separación horizontal: el espacio lo gestiona el padding interno */
+    margin-top: 32px;
+    padding: 0;
+    list-style: none;
+}
+
+/* Items base */
+.studying-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 0 24px; /* padding horizontal simétrico: crea espacio uniforme a ambos lados del borde */
+    border-right: 1px solid #b1caed;
+}
+
+.studying-item:hover h2 {
+    color: #4eb848;
+}
+
+.studying-item:hover .arrow-icon {
+    transform: translateX(10px);
+    transition: transform 0.3s ease;
+}
+
+/* Flecha verde (triángulo) entre items excepto el último */
+.studying-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0; /* dentro del padding */
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+}
+
+/* Último item sin flecha */
+.studying-item:last-child::after { content: none; }
+
+/* El último item no necesita borde derecho */
+.studying-item:last-child { border-right: none; padding-right: 0; }
+
+.studying-list .studying-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.studying-item:last-child::after {
+    content: "";
+    display: block;
+    width: 32px; 
+}
+
+/* El último ítem no necesita separación a la derecha */
+
+
+/* Responsive: degradar a 2 columnas en tablets y 1 en móviles */
+@media (max-width: 900px) {
+    .studying-list { grid-template-columns: repeat(2, 1fr); }
+    /* En 2 columnas quitamos el borde del segundo en cada fila */
+    .studying-item { padding: 0 20px; }
+    .studying-item:nth-child(2n) { border-right: none; padding-right: 0; }
+}
+@media (max-width: 520px) {
+    .studying-list { grid-template-columns: 1fr; }
+    .studying-item { border-right: none; padding: 0; }
+    .studying-list .studying-item:not(:last-child)::after { display: none; }
+}
+
+#last-image {
+    aspect-ratio: 15 / 10; /* Imagen final más ancha */
+}
+
+/* Responsive refinado: en pantallas pequeñas garantizamos al menos 2 columnas si cabe */
+@media (max-width: 600px) {
+    .studying-list {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 20px;
+    }
+    .image-container { aspect-ratio: 16 / 10; }
+}
+
+.arrow-icon {
+    width: 48px;      /* tamaño de la flecha */
+    height: 48px;
+    margin-top: 12px; /* espacio respecto al párrafo */
+    display: block;
+    color: #4eb848;
+    object-fit: contain;
+    filter: invert(46%) sepia(79%) saturate(464%) hue-rotate(76deg) brightness(92%) contrast(90%);
+    
+}
 
 
 
@@ -206,4 +452,35 @@ ul {
 /* colores auxiliares*/
 .bg-card {
     background-color: #f4f6f8;
+}
+
+#title-studying {
+    font-family: rubik;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 46.8px;
+}
+
+.image-title {
+    font-family: rubik;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+/* Ajuste visual para que el título no sume margen extra sobre el padding del contenedor */
+.studying > #title-studying {
+    margin: 0 0 28px 0; /* Elimina margen superior y controla separación inferior */
+    line-height: 1.15; /* Más compacto */
+}
+
+h1 {
+    font-family: "Rubik", sans-serif;
+    color: #334155;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: "Rubik", sans-serif;
+    color: #334155;
+    font-weight: 400;
 }

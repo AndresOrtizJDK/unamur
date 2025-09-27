@@ -1,0 +1,131 @@
+.articule-social {
+    height: 950px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.articule-social .titulo-social {
+    color: #334155;
+    font-family: "Rubik", sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+
+.articule-social h2 {
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.social-container-intro {
+    border-bottom: 1px solid #dae2ec;
+}
+
+.social-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    font-size: 26px;
+    color: #334155;
+    font-weight: 400;
+    border-bottom: 1px solid #dae2ec;
+    transition: all 0.3s ease-in-out;
+    font-family: "Rubik", sans-serif;
+
+    &:hover {
+        border-bottom: 1px solid #16a34a;
+        color: #16a34a;
+        cursor: pointer;
+    }
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-box svg {
+    color: #16a34a;
+    height: 30px;
+    width: 30px;
+}
+
+
+.arrow-up svg {
+    color: #9ba6b8 !important;
+}
+
+
+.img-social img {
+    height: 710px;
+    width: 635px;
+    border-radius: 4px;
+    object-fit: cover;
+    transform: translateX(-50px);
+    z-index: -10px;
+}
+
+.info-social {
+    background-color: #fff;
+    padding: 80px;
+    border: 1px solid #eaf0f6;
+    border-radius: 4px;
+    width: 710px;
+    height: 590px;
+    box-sizing: border-box;
+    z-index: 10;
+    transform: translateX(50px);
+}
+
+
+.articule-number {
+    width: 100vw;
+    height: 386px;
+    display: flex;
+    justify-content: center;
+    gap: 155px;
+    font-family: "Rubik", sans-serif;
+}
+
+.number-title {
+    color: #334155;
+    font-size: 44px;
+    box-sizing: border-box;
+    font-weight: 500;
+    width: 400px;
+    
+}
+
+.container-number {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 60px;
+    width: auto;
+    height: 300px;
+   
+    box-sizing: border-box;
+}
+
+.number {
+    color: #4eb848;
+    font-size: 80px;
+    font-weight: 400;
+    border-bottom: 2px solid #dae2ec;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+}
+
+.font-number {
+    color: #334155;
+    font-size: 24px;
+    font-weight: 400;
+}
