@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 
@@ -110,10 +111,30 @@ body {
 }
 
 .color-gray {
+=======
+
+
+
+
+
+/* colores principales de la pagina*/
+.color-green{
+    color: #4eb848;
+    
+}
+
+.color-gray{
+>>>>>>> 6ff0fcf81a8d0053e6b5afe59cf89b3c7fb09312
     color: #334155;
 }
 
 /* colores auxiliares*/
+<<<<<<< HEAD
 .bg-card {
     background-color: #f4f6f8;
 }
+=======
+.gray-card{
+    background-color: #f4f6f8;
+}
+>>>>>>> 6ff0fcf81a8d0053e6b5afe59cf89b3c7fb09312
