@@ -1,0 +1,22 @@
+
+main {
+    margin: 0 15.5vw;
+    padding: 0 32px;    
+
+}
+
+main section{
+    padding: 24px 0 8px 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #586474;
+}
+main section span {
+
+    transition: 0.3s ease-in-out;
+
+    &:hover{
+        color: #4eb848;
+        cursor: pointer;
+    }
+}

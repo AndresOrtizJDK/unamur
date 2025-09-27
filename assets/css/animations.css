@@ -1,0 +1,19 @@
+#navbar {
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+#navbar.hide {
+  transition: transform 1s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transform: translateY(-100vh);
+}
+
+#topheader {
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+
+#topheader.hide {
+  transition: transform 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  z-index: 10px;
+  transform: translateY(-36px);
+}

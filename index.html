@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Université de Namur</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/sections.css">
 </head>
 
 <body>
 
-    <div class="top-header">
+    <div class="top-header" id="topheader">
         <nav>
             <div class="elements">
                 <ul>
@@ -35,9 +38,38 @@
         </nav>
     </div>
 
+    <nav class="nav-bar" id="navbar">
+        <div class="nav-elements">
+            <div class="nav-logo">
+                <img src="assets/images/icons/logo.svg" alt="Logo de l'Université de Namur">
+            </div>
+
+            <div class="nav-menu">
+                <div class="list-element">Études<img class="drop-icon" src="assets/images/icons/drop-icon.svg" alt="">
+                </div>
+                <div class="list-element">Facultés<img class="drop-icon" src="assets/images/icons/drop-icon.svg" alt="">
+                </div>
+                <div class="list-element">Vie du campus<img class="drop-icon" src="assets/images/icons/drop-icon.svg"
+                        alt=""></div>
+                <div class="list-element">La recherche<img class="drop-icon" src="assets/images/icons/drop-icon.svg"
+                        alt=""></div>
+                <div class="list-element">International<img class="drop-icon" src="assets/images/icons/drop-icon.svg"
+                        alt=""></div>
+                <div class="list-element">Société<img class="drop-icon" src="assets/images/icons/drop-icon.svg" alt="">
+                </div>
+                <div class="list-element">Université<img class="drop-icon" src="assets/images/icons/drop-icon.svg"
+                        alt=""></div>
+            </div>
+
+            <div class="nav-button">
+                <button id="button-registration">Inscription</button>
+            </div>
+        </div>
+    </nav>
+
     <div class="video-section">
         <div class="video-loop">
-            <video src="assets/images/videos/home_video.mp4" autoplay loop muted></video>
+            <video src="assets/images/videos/home_video.mp4" loop muted></video>
             <div class="welcome">
                 <h1>Bienvenue à <br>
                     l'Université de Namur</h1>
@@ -45,5 +77,20 @@
         </div>
     </div>
 
+
+    <main>
+        <section >
+            <span>Accueil</span> / Bienvenue à l'Université de Namur
+        </section>
+
+        <div></div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="assets/js/animations.js"></script>
 </body>
+
 </html>
