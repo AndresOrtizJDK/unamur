@@ -7,6 +7,15 @@
 
 }
 
+.article-inscription {
+    width: 100vw;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+
+}
+
 
 .articule-social .titulo-social {
     color: #334155;
@@ -81,7 +90,7 @@
     width: 710px;
     height: 590px;
     box-sizing: border-box;
-    z-index: 10;
+    z-index: 2;
     transform: translateX(50px);
 }
 
@@ -195,31 +204,97 @@
     width: 65%;
 }
 
-.cards{
+.cards {
     padding: 20px 30px;
     background-color: #f4f6f8;
     border-radius: 4px;
     align-content: center;
 }
-.cards-facultes h3{
+
+.cards-facultes h3 {
     margin: 0;
 }
 
-.cards-facultes{
+.cards-facultes {
     padding-left: 10px;
-    padding-top: 10px; 
-    padding-bottom: 10px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-left: 3px solid;
 }
 
-.h4-card{
+.h4-card {
     font-size: 14px;
     font-weight: 400;
     color: #4a5769;
 }
 
-.span-card{
+.span-card {
     font-size: 18px;
     font-weight: 400;
     color: #334155;
+}
+
+.article-inscription {
+    display: flex; /* centra horizontalmente */
+    align-items: center;     /* centra verticalmente */
+ 
+}
+
+.articule-inscription {
+    background-color: #f4f6f8;
+    border-radius: 8px;
+    width: 550px;
+    padding: 80px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;  
+    text-align: left;  
+    transform: translateX(80px);        
+    z-index: 2;
+}
+
+
+.img-inscription img {
+    height: 533px;
+    width: 710px;
+    border-radius: 8px;
+    object-fit: cover;
+    transform: translateX(-90px); 
+    z-index: -1; 
+}
+
+.h2-inscription {
+    font-family: "Rubik", sans-serif;
+    font-size: 46px;
+    font-weight: 500;
+    color: #334155;
+    margin: 0; 
+    padding: 0;
+}
+
+.p-inscription {
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: "Nunito Sans", sans-serif;
+    color: #4a5668;
+    font-weight: 400;
+    margin: 21px 0;
+}
+
+.span-inscription {
+    color: #fff;
+    padding: 15px 31px;
+    background-color: #4eb848;
+    font-size: 21px;
+    border-radius: 999px;
+    line-height: 1.5;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.span-inscription:hover {
+    cursor: pointer;
+    background-color: #3a9e3a;
 }
